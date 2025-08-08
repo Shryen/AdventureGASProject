@@ -30,6 +30,8 @@ protected:
 	FGameplayAttributeData MaxHealth;
 	ATTRIBUTE_ACCESSORS(UAdventureAttributeSet, MaxHealth)
 
+	UFUNCTION()
 	void OnRep_Health(const FGameplayAttributeData& OldHealth);
+	UFUNCTION()
 	void OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHealth);
 };
